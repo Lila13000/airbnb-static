@@ -1,0 +1,18 @@
+---
+title: Our Team
+---
+<div class="container text-center padded">
+  <h1>Our team</h1>
+  <ul class="list-inline text-center">
+  <% ["anne", "seb", "romain"].each do |member| %>
+    <li>
+      <%= image_tag "images/#{member}.jpg", class: "img-rounded avatar" %>
+      <h3><%= member.capitalize %></h3>
+    </li>
+  <% end %>
+  </ul>
+  <h3 class="padded">
+  <%= link_to "Meet the team", "team.html", class: "btn btn-primary" %>
+  </h3>
+</div>
+
